@@ -306,3 +306,54 @@ a {
 .hidden {
   display: none;
 }
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 573px;
+  }
+  #search-bar {
+    gap: 20px;
+  }
+  #search-results {
+    height: 481px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 48px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    /* display: grid;
+    grid-template-rows: repeat(4, 1fr); */
+    /* gap: 37px; */
+    display: block;
+    position: relative;
+  }
+  #user-name {
+    position: absolute;
+    top: 40px;
+    left: 198px;
+  }
+  #user-link-box {
+    position: absolute;
+    top: 81px;
+    left: 198px;
+  }
+  #user-join-date {
+    position: absolute;
+    top: 109px;
+    left: 198px;
+  }
+  #user-bio-info {
+    position: absolute;
+    top: 181px;
+    left: 40px;
+  }
+  #user-repos-info {
+    position: absolute;
+    top: 263px;
+    left: 40px;
+  }
+  /* #location-info {
+    position: absolute;
+    top: 278px;
+    left: 40px;
+  } */
+}
