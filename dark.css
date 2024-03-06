@@ -366,7 +366,7 @@ a {
   main {
     width: 327px;
     height: 777px;
-    padding-top: 20px;
+    margin-top: 20px;
   }
   #search-bar {
     /* gap: 5px; */
