@@ -1,0 +1,287 @@
+/* Import Sapce Mono Google Font */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* User Agent Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Variables */
+
+:root {
+  --light-background: #f6f8ff;
+  --light-foreground: #fefefe;
+  --light-blue: #0079ff;
+  --light-grey: #697c9a;
+  --light-blue-grey: #4b6a9b;
+  --light-charcoal: #2b3442;
+  --dark-background: #141d2f;
+  --dark-foreground: #1e2a47;
+  --dark-blue: #0079ff;
+  --dark-white: #ffffff;
+  --regular: 400;
+  --bold: 700;
+}
+
+/* Utility Classes */
+
+.head-1-light {
+  font-size: 26px;
+  line-height: 38px;
+  color: var(--light-charcoal);
+}
+.head-1-dark {
+  font-size: 26px;
+  line-height: 38px;
+  color: var(--dark-white);
+}
+
+.head-2-light {
+  font-size: 22px;
+  line-height: 33px;
+  color: var(--light-charcoal);
+}
+
+.head-2-dark {
+  font-size: 22px;
+  line-height: 33px;
+  color: var(--dark-white);
+}
+
+.head-3-light,
+.head-3-dark {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--light-blue);
+}
+
+.head-4-light {
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--light-blue-grey);
+}
+.head-4-dark {
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--dark-white);
+}
+.body-text {
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.bold {
+  font-weight: var(--bold);
+}
+
+.regular {
+  font-weight: var(--regular);
+}
+
+.white {
+  color: var(--dark-white);
+}
+
+.blue-grey {
+  color: var(--light-blue-grey);
+}
+
+.repo-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.search-button {
+  background-color: var(--light-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-radius: 10px;
+  padding: 24px 12.5px;
+}
+
+.search-button:hover {
+  cursor: pointer;
+  background-color: #60abff;
+}
+
+/* Element Styles */
+body {
+  font-family: "Space Mono", monospace;
+  background-color: var(--light-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  font-size: 16px;
+}
+
+main {
+  width: 730px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+}
+header div {
+  width: 78px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+header div:hover {
+  cursor: pointer;
+
+  & h4 {
+    color: #222731;
+    transition: 0.8s;
+  }
+  & svg path {
+    fill: #222731;
+    transition: 0.8s;
+  }
+}
+header div h4 {
+  letter-spacing: 2.5px;
+}
+#search-bar {
+  width: 100%;
+  height: 69px;
+  border-radius: 15px;
+  border: none;
+  padding: 0 16px;
+  gap: 25px;
+  line-height: 24px;
+  color: var(--light-charcoal);
+  background-color: var(--light-foreground);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-blue);
+}
+
+#search-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: var(--light-foreground);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--light-blue-grey);
+  outline: none;
+  font-size: 18px;
+}
+
+#search-results {
+  height: 419px;
+  width: 100%;
+  background-color: var(--light-foreground);
+  border-radius: 15px;
+  padding: 48px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  display: grid;
+  grid-template-columns: 117px 480px;
+  gap: 37px;
+}
+
+#user-pic {
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#user-info {
+  display: grid;
+  grid-template-rows: 85px 53px 185px;
+}
+
+#user-profile-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#user-name {
+  margin-bottom: 2px;
+}
+#user-link-box {
+  margin-bottom: 20px;
+}
+#user-join {
+  text-align: right;
+  color: var(--light-grey);
+}
+#user-bio-info p {
+  opacity: 75%;
+}
+#repos-numbers {
+  border-radius: 10px;
+  background-color: var(--light-background);
+  height: 85px;
+  display: flex;
+  align-items: center;
+  padding: 15px 32px;
+  margin-bottom: 39px;
+}
+#repo-num-box {
+  margin-right: 99px;
+}
+
+#followers-num-box {
+  margin-right: 122px;
+}
+
+#location-info {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "location twitter"
+    "link company";
+  gap: 30px 0;
+}
+
+#location-box {
+  grid-area: location;
+}
+#twitter-box {
+  grid-area: twitter;
+  padding-left: 30px;
+}
+#link-box {
+  grid-area: link;
+}
+#company-box {
+  grid-area: company;
+  padding-left: 30px;
+}
+
+.location-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.location-item p {
+  color: var(--light-blue-grey);
+  font-weight: var(--regular);
+  font-size: 15px;
+}
+
+.not-available {
+  opacity: 50%;
+}
