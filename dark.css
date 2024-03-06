@@ -33,7 +33,7 @@
 .head-1-light {
   font-size: 26px;
   line-height: 38px;
-  color: var(--light-charcoal);
+  color: var(--dark-white);
 }
 .head-1-dark {
   font-size: 26px;
@@ -44,7 +44,7 @@
 .head-2-light {
   font-size: 22px;
   line-height: 33px;
-  color: var(--light-charcoal);
+  color: var(--dark-white);
 }
 
 .head-2-dark {
@@ -63,7 +63,7 @@
 .head-4-light {
   font-size: 13px;
   line-height: 20px;
-  color: var(--light-blue-grey);
+  color: var(--dark-white);
 }
 .head-4-dark {
   font-size: 13px;
@@ -73,6 +73,7 @@
 .body-text {
   font-size: 15px;
   line-height: 25px;
+  color: var(--dark-white);
 }
 
 .bold {
@@ -88,7 +89,7 @@
 }
 
 .blue-grey {
-  color: var(--light-blue-grey);
+  color: var(--dark-white);
 }
 
 .repo-item {
@@ -114,7 +115,7 @@
 /* Element Styles */
 body {
   font-family: "Space Mono", monospace;
-  background-color: var(--light-background);
+  background-color: var(--dark-background);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,20 +135,24 @@ header {
   margin-bottom: 36px;
 }
 header div {
-  width: 78px;
+  width: 90px;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
+  color: var(--dark-white);
+  & svg path {
+    fill: var(--dark-white);
+  }
 }
 header div:hover {
   cursor: pointer;
 
   & h4 {
-    color: #222731;
+    color: #90a4d4;
     transition: 0.8s;
   }
   & svg path {
-    fill: #222731;
+    fill: #90a4d4;
     transition: 0.8s;
   }
 }
@@ -162,8 +167,8 @@ header div h4 {
   padding: 0 16px;
   gap: 25px;
   line-height: 24px;
-  color: var(--light-charcoal);
-  background-color: var(--light-foreground);
+  color: var(--dark-white);
+  background-color: var(--dark-foreground);
   display: grid;
   grid-template-columns: 5% 50% 20% 15%;
   align-items: center;
@@ -184,18 +189,19 @@ a {
   width: 100%;
   height: 100%;
   border: none;
-  background-color: var(--light-foreground);
+  background-color: var(--dark-foreground);
   font-size: 16px;
   line-height: 24px;
-  color: var(--light-blue-grey);
+  color: var(--dark-white);
   outline: none;
   font-size: 18px;
+  color-scheme: dark !important;
 }
 
 #search-results {
   height: 419px;
   width: 100%;
-  background-color: var(--light-foreground);
+  background-color: var(--dark-foreground);
   border-radius: 15px;
   padding: 48px;
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
@@ -228,14 +234,14 @@ a {
 }
 #user-join {
   text-align: right;
-  color: var(--light-grey);
+  color: var(--dark-white);
 }
 #user-bio-info p {
   opacity: 75%;
 }
 #repos-numbers {
   border-radius: 10px;
-  background-color: var(--light-background);
+  background-color: var(--dark-background);
   height: 85px;
   display: flex;
   align-items: center;
@@ -282,7 +288,7 @@ a {
   align-items: center;
 }
 .location-item p {
-  color: var(--light-blue-grey);
+  color: var(--dark-white);
   font-weight: var(--regular);
   font-size: 15px;
 }
